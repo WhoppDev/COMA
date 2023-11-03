@@ -852,7 +852,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.175574, y: 0.057739973, z: -19.974041}
+  m_LocalPosition: {x: -5.1755548, y: 0.057739973, z: -19.974041}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1233,7 +1233,7 @@ SpriteRenderer:
   m_Size: {x: 6.46, y: 0.11}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &857294778
@@ -2140,8 +2140,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.021800041, y: -5.14305, z: 0}
-    m_Extent: {x: 9.5394, y: 9.26405, z: 0}
+    m_Center: {x: 0.0218997, y: -5.1421, z: 0}
+    m_Extent: {x: 9.5438, y: 9.2768, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2519,8 +2519,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0230999, y: -5.13595, z: 0}
-    m_Extent: {x: 9.5422, y: 9.27495, z: 0}
+    m_Center: {x: 0.016149998, y: -5.14125, z: 0}
+    m_Extent: {x: 9.543949, y: 9.28035, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3341,8 +3341,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.026799679, y: -5.13755, z: 0}
-    m_Extent: {x: 9.5467, y: 9.276449, z: 0}
+    m_Center: {x: 0.0158, y: -5.1411505, z: 0}
+    m_Extent: {x: 9.5403, y: 9.26775, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4185,8 +4185,8 @@ SceneRoots:
   - {fileID: 857294781}
   - {fileID: 1165165801}
   - {fileID: 1994568754}
-  - {fileID: 984593664}
   - {fileID: 199628002}
   - {fileID: 863858533}
   - {fileID: 1446293383}
   - {fileID: 1870576910}
+  - {fileID: 984593664}
