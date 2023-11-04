@@ -19,14 +19,14 @@ public class HandAppear : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!handAppear) { return; }
         HandAppearController();
+        AudioManager.PlaySound(_hitSound);
     }
 
     private void HandAppearController()
     {
-        if (!handAppear) { return; }
 
-        AudioManager.PlaySound(_hitSound);
         hand.SetActive(true);
         handAppear = false;
         CORE.instance.sceneController.handAppear = true;
