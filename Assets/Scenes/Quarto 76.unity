@@ -821,6 +821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 358948737}
   - component: {fileID: 358948738}
+  - component: {fileID: 358948739}
   m_Layer: 0
   m_Name: Porta sem numero
   m_TagString: Untagged
@@ -895,6 +896,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &358948739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358948736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d2fa5e1bb5d45439692851d88bd70a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number666: {fileID: 1281954274}
+  number76: {fileID: 906149128}
+  mudarNumero: 2
+  piscadasLuz: 0
 --- !u!1 &380701676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,6 +2318,7 @@ MonoBehaviour:
   - {fileID: 380701677}
   - {fileID: 623721369}
   intensityChangeSpeed: 1
+  numberChange: {fileID: 358948739}
 --- !u!4 &757553667
 Transform:
   m_ObjectHideFlags: 0
