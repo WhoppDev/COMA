@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 16341469}
   - component: {fileID: 16341471}
   - component: {fileID: 16341472}
+  - component: {fileID: 16341473}
   m_Layer: 0
   m_Name: Billy
   m_TagString: Untagged
@@ -276,6 +277,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &16341473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16341468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb8b4bc3350a62e4e9782d29df6d234d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoMaximoParado: 10
+  tempoParado: 0
+  anim: {fileID: 16341472}
 --- !u!1 &92809300
 GameObject:
   m_ObjectHideFlags: 0
@@ -5632,6 +5648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b973944c6a8f604489e745254be187a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMoviment: 0
 --- !u!4 &1973808384
 Transform:
   m_ObjectHideFlags: 0
@@ -5742,8 +5759,8 @@ GameObject:
   - component: {fileID: 2038537921}
   - component: {fileID: 2038537919}
   - component: {fileID: 2038537918}
-  - component: {fileID: 2038537920}
   - component: {fileID: 2038537922}
+  - component: {fileID: 2038537920}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5792,6 +5809,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 598df011-f682-4510-ae9a-a238601e39fd
     m_ActionName: Player/Moviment[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b50610ea-bb17-4be8-a0da-1ff29487e920
+    m_ActionName: Player/Intreract
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

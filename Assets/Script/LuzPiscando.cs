@@ -9,6 +9,8 @@ public class LuzPiscando : MonoBehaviour
 
     private bool increasingIntensity = true;
 
+    public DoorNumberChange numberChange;
+
     // Update is called once per frame
     void Update()
     {
@@ -29,6 +31,10 @@ public class LuzPiscando : MonoBehaviour
                 if (luz.intensity <= 0.0f) // Valor mínimo de intensidade
                 {
                     increasingIntensity = true;
+                    if(numberChange != null)
+                    {
+                        numberChange.piscadasLuz++;
+                    }
                 }
             }
         }

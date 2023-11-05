@@ -19,7 +19,6 @@ public class PlayerMoviment : MonoBehaviour
     {
         rb.velocity = new Vector2(direction.x * playerSpeed, rb.velocity.y);
 
-
         if (direction.x < 0)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
@@ -33,5 +32,7 @@ public class PlayerMoviment : MonoBehaviour
         public void Moviment(InputAction.CallbackContext value)
     {
         direction = value.ReadValue<Vector2>();
+        CORE.instance.gameManager.playerMoviment = direction.magnitude;
+
     }
 }
