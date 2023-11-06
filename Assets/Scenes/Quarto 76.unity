@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 16341470}
   - component: {fileID: 16341469}
   - component: {fileID: 16341471}
-  - component: {fileID: 16341472}
   - component: {fileID: 16341473}
+  - component: {fileID: 16341474}
   m_Layer: 0
   m_Name: Billy
   m_TagString: Untagged
@@ -256,7 +256,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34, y: 1.1}
   m_EdgeRadius: 0
---- !u!95 &16341472
+--- !u!114 &16341473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16341468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb8b4bc3350a62e4e9782d29df6d234d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoMaximoParado: 10
+  tempoParado: 0
+  anim: {fileID: 16341474}
+--- !u!95 &16341474
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -277,21 +292,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &16341473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16341468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb8b4bc3350a62e4e9782d29df6d234d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tempoMaximoParado: 10
-  tempoParado: 0
-  anim: {fileID: 16341472}
 --- !u!1 &92809300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,7 +2824,7 @@ Transform:
   m_GameObject: {fileID: 911932704}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7043705, y: -0.034529984, z: -10}
+  m_LocalPosition: {x: 0.70921147, y: -0.034529984, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5961,6 +5961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2038537919}
+  anim: {fileID: 16341474}
   playerSpeed: 2
 --- !u!4 &2038537921
 Transform:
