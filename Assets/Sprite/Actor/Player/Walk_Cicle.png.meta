@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f12b9c16d492e5648ad08b5ff9fa2285
+guid: 9d0998ef9b805674a9427a51b89e4395
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,33 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -145,17 +119,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_0
+      name: Walk_Cicle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 229b77042d6f14a408f7eec616cd940f
-      internalID: -1431213751
+      spriteID: cb5f30f8cacfc3149b86d691ba42a5e6
+      internalID: 1299261294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_1
+      name: Walk_Cicle_1
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3ac193f882fad444bdb8e4e8bc194c0
-      internalID: -2116840723
+      spriteID: 96516e26be42f6b43aaceaed0a31cab4
+      internalID: 480381153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_2
+      name: Walk_Cicle_2
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc2afbac92fc1a74bb5adcded7f2d9d1
-      internalID: 909607480
+      spriteID: c9803df1502cd3548aa9dfb3a542bb8e
+      internalID: -489384445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_3
+      name: Walk_Cicle_3
       rect:
         serializedVersion: 2
         x: 384
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 556dc6c8f40948642b475f1682acdeb1
-      internalID: -1346179316
+      spriteID: ef59c07c3cfa7a544888bfc8ab395fc8
+      internalID: -1565765989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_4
+      name: Walk_Cicle_4
       rect:
         serializedVersion: 2
         x: 512
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cffcf426952fb14ea3ccde8a354c569
-      internalID: 1982295495
+      spriteID: 225e37498d2566a45b3cb0a6c4f7fb3a
+      internalID: 1906411727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_5
+      name: Walk_Cicle_5
       rect:
         serializedVersion: 2
         x: 640
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c257c8d314604c49a7cda24c32f704f
-      internalID: -547421726
+      spriteID: 7a94a2a0fb344fe4e85e51515d14c349
+      internalID: -332445081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_6
+      name: Walk_Cicle_6
       rect:
         serializedVersion: 2
         x: 768
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92a6d99ee60eecc46b6f7898247dc0b2
-      internalID: 492699447
+      spriteID: f7e000ed76bbeed49b09b98e23d31fdf
+      internalID: 1371514283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_7
+      name: Walk_Cicle_7
       rect:
         serializedVersion: 2
         x: 896
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fefbee6449bb5d49a664c4ee23e2061
-      internalID: 1260306454
+      spriteID: 90006db5c50640448b31823dc24d0873
+      internalID: -1825526683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_8
+      name: Walk_Cicle_8
       rect:
         serializedVersion: 2
         x: 1024
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5c897f5d781063409cda5e1d8c8a568
-      internalID: 1154346670
+      spriteID: 63a657bf73a0bfd4199e8c0f7621e149
+      internalID: -429693453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Sheet_Billy_andando2_9
+      name: Walk_Cicle_9
       rect:
         serializedVersion: 2
         x: 1152
-        y: 0
+        y: 1
         width: 128
-        height: 128
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dd0ac613a3a4324ea384414ea6418dc
-      internalID: -150695284
+      spriteID: 7320fc72e4d515d4e947fdd4fd0b3ee1
+      internalID: 1115489420
       vertices: []
       indices: 
       edges: []
@@ -369,16 +356,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite_Sheet_Billy_andando2_0: -1431213751
-      Sprite_Sheet_Billy_andando2_1: -2116840723
-      Sprite_Sheet_Billy_andando2_2: 909607480
-      Sprite_Sheet_Billy_andando2_3: -1346179316
-      Sprite_Sheet_Billy_andando2_4: 1982295495
-      Sprite_Sheet_Billy_andando2_5: -547421726
-      Sprite_Sheet_Billy_andando2_6: 492699447
-      Sprite_Sheet_Billy_andando2_7: 1260306454
-      Sprite_Sheet_Billy_andando2_8: 1154346670
-      Sprite_Sheet_Billy_andando2_9: -150695284
+      Walk_Cicle_0: 1299261294
+      Walk_Cicle_1: 480381153
+      Walk_Cicle_2: -489384445
+      Walk_Cicle_3: -1565765989
+      Walk_Cicle_4: 1906411727
+      Walk_Cicle_5: -332445081
+      Walk_Cicle_6: 1371514283
+      Walk_Cicle_7: -1825526683
+      Walk_Cicle_8: -429693453
+      Walk_Cicle_9: 1115489420
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
