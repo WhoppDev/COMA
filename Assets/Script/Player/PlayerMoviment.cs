@@ -6,16 +6,30 @@ public class PlayerMoviment : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator anim;
     [SerializeField] private float playerSpeed = 5f;
+    [SerializeField] private float runningSpeed = 10f;
+
+    private bool isRunning = false;
+
     private Vector2 direction;
 
     private void Update()
     {
         WalkAnimation();
+        anim.SetBool("isRunning", isRunning);
     }
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(direction.x * playerSpeed, rb.velocity.y);
+
+        if(isRunning)
+        {
+            rb.velocity = new Vector2(direction.x * runningSpeed, rb.velocity.y);
+        } 
+        else
+        {
+            rb.velocity = new Vector2(direction.x * playerSpeed, rb.velocity.y);
+
+        }
 
         if (direction.x < 0)
         {
@@ -44,6 +58,20 @@ public class PlayerMoviment : MonoBehaviour
     {
         direction = value.ReadValue<Vector2>();
         CORE.instance.gameManager.playerMoviment = direction.magnitude;
+
+    }
+
+    public void Run(InputAction.CallbackContext value)
+    {
+        if(value.started)
+        {
+            isRunning = true;
+        }
+
+        if(value.canceled)
+        {
+            isRunning= false;
+        }
 
     }
 }

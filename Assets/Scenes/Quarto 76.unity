@@ -2901,7 +2901,7 @@ Transform:
   m_GameObject: {fileID: 911932704}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.70691466, y: -0.034529984, z: -10}
+  m_LocalPosition: {x: 0.70246863, y: -0.034529984, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5993,6 +5993,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b50610ea-bb17-4be8-a0da-1ff29487e920
     m_ActionName: Player/Intreract
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2038537920}
+        m_TargetAssemblyTypeName: PlayerMoviment, Assembly-CSharp
+        m_MethodName: Run
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 30092a1c-617e-456f-b1fb-f28316d5a561
+    m_ActionName: Player/Correr[/Keyboard/shift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -6040,6 +6056,7 @@ MonoBehaviour:
   rb: {fileID: 2038537919}
   anim: {fileID: 16341474}
   playerSpeed: 1.3
+  runningSpeed: 3
 --- !u!4 &2038537921
 Transform:
   m_ObjectHideFlags: 0
