@@ -63,7 +63,7 @@ public class PlayerMoviment : MonoBehaviour
 
     public void Run(InputAction.CallbackContext value)
     {
-        if(value.started)
+        if(value.started && direction.magnitude > 0)
         {
             isRunning = true;
         }
