@@ -60,7 +60,7 @@ public class PlayerMoviment : MonoBehaviour
         }
     }
 
-        public void Moviment(InputAction.CallbackContext value)
+    public void Moviment(InputAction.CallbackContext value)
     {
         direction = value.ReadValue<Vector2>();
         CORE.instance.gameManager.playerMoviment = direction.magnitude;

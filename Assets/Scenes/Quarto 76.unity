@@ -5998,7 +5998,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2038537920}
         m_TargetAssemblyTypeName: PlayerMoviment, Assembly-CSharp
-        m_MethodName: Moviment
+        m_MethodName: Run
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6103,6 +6103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa17d2c0367dc428f1839b5206c78f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moviment: {fileID: 0}
+  animation: {fileID: 0}
 --- !u!1 &2055279047
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StopAnimation : MonoBehaviour
+public class AnimationController : MonoBehaviour
 {
     public float tempoMaximoParado = 10.0f; // Tempo máximo parado em segundos
     public float tempoParado = 0.0f; // Tempo parado atual
