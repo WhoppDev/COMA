@@ -5,7 +5,8 @@ public class PlayerController : MonoBehaviour
     static public PlayerController instance;
 
     public PlayerMoviment moviment;
-    public AnimationController animation;
+    public AnimationController anim;
+    public CombatController combat;
 
     void Awake()
     {

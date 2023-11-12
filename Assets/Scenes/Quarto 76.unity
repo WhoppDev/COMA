@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 16341471}
   - component: {fileID: 16341473}
   - component: {fileID: 16341474}
+  - component: {fileID: 16341475}
   m_Layer: 0
   m_Name: Billy
   m_TagString: Untagged
@@ -247,7 +248,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 0.34, y: 1.1}
     newSize: {x: 0.34, y: 1.1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -292,6 +293,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &16341475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16341468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8580bef6379a63443a7a0cb5e573c317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 16341474}
+  isAttacking: 0
 --- !u!1 &34597238
 GameObject:
   m_ObjectHideFlags: 0
@@ -6012,8 +6027,8 @@ MonoBehaviour:
     m_ActionName: Player/Correr[/Keyboard/shift]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2038537920}
-        m_TargetAssemblyTypeName: PlayerMoviment, Assembly-CSharp
+      - m_Target: {fileID: 16341475}
+        m_TargetAssemblyTypeName: CombatController, Assembly-CSharp
         m_MethodName: Attack
         m_Mode: 0
         m_Arguments:
@@ -6074,7 +6089,6 @@ MonoBehaviour:
   anim: {fileID: 16341474}
   playerSpeed: 1.3
   runningSpeed: 2.3
-  isAttack: 0
 --- !u!4 &2038537921
 Transform:
   m_ObjectHideFlags: 0
@@ -6103,8 +6117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa17d2c0367dc428f1839b5206c78f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moviment: {fileID: 0}
-  animation: {fileID: 0}
+  moviment: {fileID: 2038537920}
+  anim: {fileID: 16341473}
+  combat: {fileID: 16341475}
 --- !u!1 &2055279047
 GameObject:
   m_ObjectHideFlags: 0

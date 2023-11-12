@@ -9,7 +9,6 @@ public class PlayerMoviment : MonoBehaviour
     [SerializeField] private float runningSpeed = 10f;
 
     private bool isRunning = false;
-    public bool isAttack = false;
 
     private Vector2 direction;
 
@@ -22,19 +21,17 @@ public class PlayerMoviment : MonoBehaviour
     void FixedUpdate()
     {
 
-        if(isRunning && !isAttack)
+        if(isRunning && !PlayerController.instance.combat.isAttacking)
         {
             rb.velocity = new Vector2(direction.x * runningSpeed, rb.velocity.y);
         } 
-        else if(!isRunning && !isAttack)
+        else if(!isRunning && !PlayerController.instance.combat.isAttacking)
         {
             rb.velocity = new Vector2(direction.x * playerSpeed, rb.velocity.y);
-
         }
-        else if(!isRunning && isAttack)
+        else if (!isRunning && PlayerController.instance.combat.isAttacking)
         {
             rb.velocity = new Vector2(direction.x * 0, rb.velocity.y);
-
         }
 
         if (direction.x < 0)
@@ -79,15 +76,6 @@ public class PlayerMoviment : MonoBehaviour
             isRunning= false;
         }
 
-    }
-
-    public void Attack(InputAction.CallbackContext value)
-    {
-        if(value.started)
-        {
-            anim.SetTrigger("isAttack");
-            isAttack = true;
-        }
     }
 
 }

@@ -29,9 +29,4 @@ public class AnimationController : MonoBehaviour
             }
         }
 
-    public void StopAttack()
-    {
-        CORE.instance.playerMoviment.isAttack = false;
-    }
-
 }
