@@ -9,5 +9,6 @@ public class EnemyStatus : ScriptableObject
     public float maxEnemyLife;
     public float enemyKnockback;
     public float enemyDamage;
+    public float enemySpeed;
 
 }

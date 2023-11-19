@@ -16,3 +16,4 @@ MonoBehaviour:
   maxEnemyLife: 10
   enemyKnockback: 1
   enemyDamage: 3
+  enemySpeed: 1
