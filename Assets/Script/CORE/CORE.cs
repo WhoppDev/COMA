@@ -10,6 +10,7 @@ public class CORE : MonoBehaviour
     public PlayerMoviment playerMoviment;
 
     public GameObject player;
+    public AnimationController animController;
 
     // Start is called before the first frame update
     void Awake()

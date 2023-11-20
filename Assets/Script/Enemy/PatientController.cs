@@ -83,8 +83,5 @@ public class PatientController : MonoBehaviour
             bloodParticle.Play();
             Debug.Log(currentEnemyLife);
         }
-
-
-
     }
 }

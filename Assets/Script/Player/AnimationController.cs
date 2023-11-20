@@ -9,7 +9,7 @@ public class AnimationController : MonoBehaviour
     [SerializeField] private Animator anim;
 
 
-        void Update()
+    void Update()
         {
             if (CORE.instance.gameManager.playerMoviment != 0)
             {
@@ -28,5 +28,20 @@ public class AnimationController : MonoBehaviour
                 }
             }
         }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Damage"))
+        {
+            TakeDamage();
+            tempoParado = 0.0f;
+        }
+    }
+
+    public void TakeDamage()
+    {
+        anim.SetTrigger("takeDamage");
+    }
 
 }
