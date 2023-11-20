@@ -1020,7 +1020,7 @@ Transform:
   m_GameObject: {fileID: 1155556061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.707602, y: -0.034529984, z: -10}
+  m_LocalPosition: {x: 0.702682, y: -0.034529984, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1192,8 +1192,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.2122855, y: -1.0537632, z: 0}
-    m_Extent: {x: 3.2361145, y: 1.7681367, z: 0}
+    m_Center: {x: 3.2069695, y: -1.0472574, z: 0}
+    m_Extent: {x: 3.2361696, y: 1.7653575, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1369,8 +1369,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.20665, y: -1.0517, z: 0}
-    m_Extent: {x: 3.2388499, y: 1.7663001, z: 0}
+    m_Center: {x: 3.2128856, y: -1.0491207, z: 0}
+    m_Extent: {x: 3.2367146, y: 1.7634943, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2044,7 +2044,7 @@ PrefabInstance:
       objectReference: {fileID: 4150805189054217371}
     - target: {fileID: 6783416028069282688, guid: 1e98c849847a04d4a85f0fc4f72287fe, type: 3}
       propertyPath: attackRange
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6783416028069282688, guid: 1e98c849847a04d4a85f0fc4f72287fe, type: 3}
       propertyPath: enemyAttack
