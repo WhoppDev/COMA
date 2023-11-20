@@ -970,7 +970,7 @@ Transform:
   m_GameObject: {fileID: 1155556061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.70544434, y: -0.034529984, z: -10}
+  m_LocalPosition: {x: 0.7058873, y: -0.034529984, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1142,8 +1142,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.2113354, y: -1.04705, z: 0}
-    m_Extent: {x: 3.2351644, y: 1.7664499, z: 0}
+    m_Center: {x: 3.209655, y: -1.0449075, z: 0}
+    m_Extent: {x: 3.233484, y: 1.7677075, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1319,8 +1319,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.2111356, y: -1.0491207, z: 0}
-    m_Extent: {x: 3.2349646, y: 1.7634943, z: 0}
+    m_Center: {x: 3.2125502, y: -1.0464075, z: 0}
+    m_Extent: {x: 3.23705, y: 1.7662075, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1590,7 +1590,7 @@ Transform:
   m_GameObject: {fileID: 1701994959}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.22, y: 0.0073879957, z: 0.0035059454}
+  m_LocalPosition: {x: 1.895, y: -0.031000018, z: 0.0035059454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1872,7 +1872,7 @@ Transform:
   m_GameObject: {fileID: 2146020380}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.87675405, y: 0.0073879957, z: 0.0035059454}
+  m_LocalPosition: {x: -0.87675405, y: -0.031000018, z: 0.0035059454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1886,6 +1886,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1148297840850745268, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 2926584629179035098, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -1947,6 +1951,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 448685648612090285, guid: 1e98c849847a04d4a85f0fc4f72287fe, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2165631189382381701, guid: 1e98c849847a04d4a85f0fc4f72287fe, type: 3}
       propertyPath: m_Name
       value: Patient
