@@ -19,6 +19,8 @@ public class PatientController : MonoBehaviour
     [SerializeField] private float currentEnemyLife;
     public float attackRange;
 
+    private bool isDead = false;
+
     private void Start()
     {
         currentEnemyLife = enemyStatus.maxEnemyLife;
@@ -64,7 +66,9 @@ public class PatientController : MonoBehaviour
     {
         if (currentEnemyLife <= 0)
         {
-            Destroy(gameObject);
+            isDead = true;
+            anim.SetBool("isDead", isDead);
+
         }
 
         float distanceToPlayer = Vector3.Distance(CORE.instance.player.transform.position, this.transform.position);
@@ -77,11 +81,11 @@ public class PatientController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("AttackPlayer"))
+        if (collision.gameObject.CompareTag("AttackPlayer") && !isDead)
         {
             currentEnemyLife--;
             bloodParticle.Play();
-            Debug.Log(currentEnemyLife);
+            anim.SetTrigger("TakeDamage");
         }
     }
 }
