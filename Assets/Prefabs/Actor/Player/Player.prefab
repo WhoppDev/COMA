@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4185941745242381658}
   m_Layer: 0
   m_Name: Billy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,7 @@ Transform:
   m_GameObject: {fileID: 2926584629179035098}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -438,6 +438,7 @@ MonoBehaviour:
   anim: {fileID: 4710124377766241608}
   playerSpeed: 1.3
   runningSpeed: 2.3
+  isRunning: 0
 --- !u!1 &8871803663004139555
 GameObject:
   m_ObjectHideFlags: 0

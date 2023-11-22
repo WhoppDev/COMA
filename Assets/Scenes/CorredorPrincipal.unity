@@ -1160,8 +1160,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.2085695, y: -1.04855, z: 0}
-    m_Extent: {x: 3.2345695, y: 1.77135, z: 0}
+    m_Center: {x: 3.2116501, y: -1.0456574, z: 0}
+    m_Extent: {x: 3.23935, y: 1.7669575, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1242,8 +1242,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.2081695, y: -1.0475075, z: 0}
-    m_Extent: {x: 3.2349696, y: 1.7651074, z: 0}
+    m_Center: {x: 3.2105355, y: -1.0519999, z: 0}
+    m_Extent: {x: 3.2343645, y: 1.7664, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1839,14 +1839,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1148297840850745268, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2926584629179035098, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 5259920911456177511, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1904,10 +1896,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 448685648612090285, guid: 1e98c849847a04d4a85f0fc4f72287fe, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2165631189382381701, guid: 1e98c849847a04d4a85f0fc4f72287fe, type: 3}
       propertyPath: m_Name
       value: Patient
