@@ -8,7 +8,7 @@ public class PlayerMoviment : MonoBehaviour
     [SerializeField] private float playerSpeed = 5f;
     [SerializeField] private float runningSpeed = 10f;
 
-    private bool isRunning = false;
+    public bool isRunning = false;
 
     private Vector2 direction;
 
@@ -20,6 +20,11 @@ public class PlayerMoviment : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(PlayerController.instance.combat.isAttacking || CORE.instance.gameManager.isTired)
+        {
+            return;
+        }
+
 
         if(isRunning && !PlayerController.instance.combat.isAttacking)
         {
@@ -28,10 +33,6 @@ public class PlayerMoviment : MonoBehaviour
         else if(!isRunning && !PlayerController.instance.combat.isAttacking)
         {
             rb.velocity = new Vector2(direction.x * playerSpeed, rb.velocity.y);
-        }
-        else if (!isRunning && PlayerController.instance.combat.isAttacking)
-        {
-            rb.velocity = new Vector2(direction.x * 0, rb.velocity.y);
         }
 
         if (direction.x < 0)

@@ -6,7 +6,7 @@ public class AnimationController : MonoBehaviour
     public float tempoParado = 0.0f; // Tempo parado atual
     private bool jogadorParado = false;
 
-    [SerializeField] private Animator anim;
+    public Animator anim;
 
 
     void Update()
@@ -42,6 +42,7 @@ public class AnimationController : MonoBehaviour
     public void TakeDamage()
     {
         anim.SetTrigger("takeDamage");
+        CORE.instance.gameManager.TakeDamage();
     }
 
 }
