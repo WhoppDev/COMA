@@ -7,10 +7,17 @@ public class TeleportManager : MonoBehaviour
 
     public Transform playerTransform;
 
+    private void Start()
+    {
+        playerTransform = FindAnyObjectByType<PlayerController>().transform;
+        PositionPlayer();
+
+    }
+
     public void EnterDoor(string doorName)
     {
         lastDoorUsed = doorName;
-        SceneManager.LoadScene("NomeDaCenaDestino");
+        SceneManager.LoadScene(doorName);
     }
 
     public void PositionPlayer()

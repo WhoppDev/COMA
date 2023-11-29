@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad46fbcfeb5f694bb40fc9b94816e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
 --- !u!1 &8607589068317133394
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +136,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoviment: 0
+  maxPlayerLife: 5
+  currentPlayerLife: 0
+  maxPlayerTired: 10
+  currentPlayerTired: 0
+  isTired: 0
 --- !u!1 &8966790915612292035
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,3 +193,4 @@ MonoBehaviour:
   teleportController: {fileID: 763843911263463380}
   playerMoviment: {fileID: 0}
   player: {fileID: 0}
+  animController: {fileID: 0}
