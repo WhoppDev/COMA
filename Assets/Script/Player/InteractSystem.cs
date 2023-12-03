@@ -7,9 +7,9 @@ public class InteractSystem : MonoBehaviour
     public float interactionDistance;
 
     public LayerMask interactableLayer;
-    public AcenderLuz acenderLuz;
+    public Interruptor acenderLuz;
 
-    public void Interact(InputAction.CallbackContext context)
+        public void Interact(InputAction.CallbackContext context)
     {
             if (context.started)
             {
@@ -20,10 +20,10 @@ public class InteractSystem : MonoBehaviour
                     if (hit.collider != null)
                     {
                         Debug.Log("Hit: " + hit.collider.name);
-                        acenderLuz = hit.collider.GetComponent<AcenderLuz>();
-                        if (acenderLuz != null)
+                        IInteractable obj = hit.collider.GetComponent<IInteractable>();
+                        if (obj != null)
                         {
-                            acenderLuz.IntectableButton(); // Chama o método sem passar parâmetros
+                            obj.Interact();
                         }
                     }
 

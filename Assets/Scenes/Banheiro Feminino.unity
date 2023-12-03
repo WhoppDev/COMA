@@ -1765,6 +1765,14 @@ PrefabInstance:
       propertyPath: doorName
       value: Corredor Principal
       objectReference: {fileID: 0}
+    - target: {fileID: 5758449066570722079, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: targetPosition.x
+      value: 3.890863
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758449066570722079, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: targetPosition.y
+      value: -0.6752432
+      objectReference: {fileID: 0}
     - target: {fileID: 5827191942448306837, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
       propertyPath: m_Size.x
       value: 0.20175934
@@ -3371,7 +3379,7 @@ Transform:
   m_GameObject: {fileID: 2085539916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2294004, y: 0.63146, z: -10}
+  m_LocalPosition: {x: 1.1577727, y: 0.63089997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

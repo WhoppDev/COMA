@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5966409130992623419}
   - component: {fileID: 5827191942448306837}
   - component: {fileID: 5758449066570722079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -90,4 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d359b9a74ab62514c952f7a5cdce7224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorName: 
+  targetScene: Corredor Principal
+  targetPosition: {x: 0.2862742, y: -0.6738096, z: 0}
+  doorName: Quarto 76

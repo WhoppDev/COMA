@@ -7,4 +7,8 @@ public class SceneController : MonoBehaviour
     [Header("Billy Room")]
     public bool terrifyScene = false;
     public bool handAppear = false;
+
+    [Header("Corredor Principal")]
+    public bool luzCorredorPrincipal = false;
+
 }

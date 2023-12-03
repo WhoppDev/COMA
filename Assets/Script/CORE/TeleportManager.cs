@@ -3,37 +3,39 @@ using UnityEngine.SceneManagement;
 
 public class TeleportManager : MonoBehaviour
 {
-    public static string lastDoorUsed = "";
+    public static TeleportManager Instance;
 
-    public Transform playerTransform;
+    // Informação sobre a porta usada para salvar entre cenas
+    public string LastDoorUsed { get; private set; }
 
-    private void Start()
+    void Awake()
     {
-        playerTransform = FindAnyObjectByType<PlayerController>().transform;
-        PositionPlayer();
-
-    }
-
-    public void EnterDoor(string doorName)
-    {
-        lastDoorUsed = doorName;
-        SceneManager.LoadScene(doorName);
-    }
-
-    public void PositionPlayer()
-    {
-        if (lastDoorUsed != "")
+        // Garante que haja apenas uma instância desse gerenciador
+        if (Instance == null)
         {
-            GameObject door = GameObject.Find(lastDoorUsed);
-            if (door != null)
-            { 
-                playerTransform.position = door.transform.position;
-            }
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
-    public void ResetLastDoorUsed()
+    public void TeleportPlayer(GameObject player, Vector3 newPosition, string newScene = null)
     {
-        lastDoorUsed = "";
+        // Move o jogador para a posição especificada
+        player.transform.position = newPosition;
+
+        // Carrega a nova cena, se necessário
+        if (!string.IsNullOrEmpty(newScene))
+        {
+            SceneManager.LoadScene(newScene);
+        }
+    }
+
+    public void SetLastDoorUsed(string doorName)
+    {
+        LastDoorUsed = doorName;
     }
 }
