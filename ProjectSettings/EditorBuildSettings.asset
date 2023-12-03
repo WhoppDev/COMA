@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Banheiro Feminino.unity
     guid: f67c389dcda2c8444bff0a51aeb174d8
+  - enabled: 1
+    path: Assets/Scenes/Corredor Direito.unity
+    guid: 802f6f7802344fa4f8ecb0929282717a
   m_configObjects: {}

@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3132b41194ce9bb4eadbf7f8385ae3ab, type: 3}
   m_Name: Corredor Principal
   m_EditorClassIdentifier: 
-  luzes: []
-  luzesligadas: 0
+  luzesligadas: 1
   isInteracting: 0
