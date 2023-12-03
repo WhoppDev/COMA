@@ -6153,6 +6153,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5838565791065758856, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
   m_PrefabInstance: {fileID: 2955268963374980944}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2038537923 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1537078510001636267, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+  m_PrefabInstance: {fileID: 2955268963374980944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038537917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d26a4577029454399f215b0515a104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2038848825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5812370743758773908, guid: 1e98c849847a04d4a85f0fc4f72287fe, type: 3}
@@ -6906,17 +6917,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6068899430132958044, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
-      propertyPath: m_Color.b
-      value: 0.9803922
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6068899430132958044, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9921569
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6068899430132958044, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
-      propertyPath: m_Color.r
-      value: 0.90196085
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2038537923}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Interact
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
