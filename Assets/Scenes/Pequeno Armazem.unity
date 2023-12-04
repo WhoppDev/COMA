@@ -892,7 +892,7 @@ PrefabInstance:
     - target: {fileID: 5875302411407214467, guid: 468e94dc5eb4788479025ba924c289ea, type: 3}
       propertyPath: interruptor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 8d5efcdffb19a78429f02d5c39b1b10e, type: 2}
     - target: {fileID: 5875302411407214467, guid: 468e94dc5eb4788479025ba924c289ea, type: 3}
       propertyPath: luzes.Array.size
       value: 5
@@ -1172,7 +1172,7 @@ Transform:
   m_GameObject: {fileID: 647212389}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.838775, y: 0.55215, z: -10}
+  m_LocalPosition: {x: 0.7767321, y: 0.52055997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -4,6 +4,12 @@ public class PlayerController : MonoBehaviour
 {
     static public PlayerController instance;
 
+    [Header("Player Status")]
+    public int playerLife;
+    public bool haveGun = false;
+
+
+    [Header("Referencias")]
     public PlayerMoviment moviment;
     public AnimationController anim;
     public CombatController combat;

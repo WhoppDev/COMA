@@ -10,12 +10,12 @@ public class CombatController : MonoBehaviour
 
     public void Attack(InputAction.CallbackContext value)
     {
-        if (value.performed && !isAttacking)
+        if (value.performed && !isAttacking && PlayerController.instance.haveGun)
         {
             anim.SetTrigger("isAttackOne");
             isAttacking = true;
         }
-        else if (value.performed && isAttacking)
+        else if (value.performed && isAttacking && PlayerController.instance.haveGun)
         {
             anim.SetTrigger("isAttackTwo");
         }

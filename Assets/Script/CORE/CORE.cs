@@ -9,8 +9,8 @@ public class CORE : MonoBehaviour
     public TeleportManager teleportController;
     public PlayerMoviment playerMoviment;
 
-    public GameObject player;
     public AnimationController animController;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Awake()
