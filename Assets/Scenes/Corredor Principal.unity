@@ -998,6 +998,8 @@ MonoBehaviour:
   targetScene: 
   targetPosition: {x: 0, y: 0, z: 0}
   doorName: 
+  fadeAnim: {fileID: 0}
+  requiredKey: {fileID: 0}
 --- !u!61 &269611917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1623,7 +1625,7 @@ Transform:
   m_GameObject: {fileID: 673920366}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26070124, y: -0.04109001, z: -10}
+  m_LocalPosition: {x: 0.26070598, y: -0.04109001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1724,6 +1726,10 @@ PrefabInstance:
     - target: {fileID: 1667165904970146280, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
       propertyPath: m_Name
       value: Quarto 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667165904970146280, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758449066570722079, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
       propertyPath: targetScene
@@ -2040,9 +2046,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 268573794091927482, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 745450558752859143, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1667165904970146280, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Corredor Direito
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667165904970146280, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758449066570722079, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
       propertyPath: doorName
@@ -3032,6 +3050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pequeno Armazem
       objectReference: {fileID: 0}
+    - target: {fileID: 1667165904970146280, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5758449066570722079, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
       propertyPath: doorName
       value: Pequeno Armazem
@@ -3967,9 +3989,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 268573794091927482, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1667165904970146280, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
       propertyPath: m_Name
       value: Banheiro Feminino
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667165904970146280, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758449066570722079, guid: 332abd56b0d4d0c4ab2611bbb9a2076e, type: 3}
       propertyPath: doorName
