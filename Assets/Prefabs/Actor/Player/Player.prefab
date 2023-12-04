@@ -387,8 +387,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfa17d2c0367dc428f1839b5206c78f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLife: 0
+  haveGun: 0
   moviment: {fileID: 1728946855096535397}
-  anim: {fileID: 7388599221046701435}
+  anim: {fileID: 4710124377766241608}
   combat: {fileID: 4185941745242381658}
 --- !u!114 &1728946855096535397
 MonoBehaviour:

@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Referencias")]
     public PlayerMoviment moviment;
-    public AnimationController anim;
+    public Animator anim;
     public CombatController combat;
 
     void Awake()
