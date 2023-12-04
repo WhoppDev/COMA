@@ -9,13 +9,15 @@ public class PlayerMoviment : MonoBehaviour
     [SerializeField] private float runningSpeed = 10f;
 
     public bool isRunning = false;
+    private bool isShiftPressed = false;
+
 
     private Vector2 direction;
 
     private void Update()
     {
         WalkAnimation();
-        anim.SetBool("isRunning", isRunning);
+        anim.SetBool("isRunning", isRunning && direction.magnitude > 0);
     }
 
     void FixedUpdate()
@@ -63,20 +65,34 @@ public class PlayerMoviment : MonoBehaviour
         direction = value.ReadValue<Vector2>();
         CORE.instance.gameManager.playerMoviment = direction.magnitude;
 
+        if (isShiftPressed && direction.magnitude > 0)
+        {
+            isRunning = true;
+        }
+        else
+        {
+            isRunning = false;
+        }
+
     }
 
     public void Run(InputAction.CallbackContext value)
     {
-        if(value.started && direction.magnitude > 0)
+        if (value.performed)
         {
-            isRunning = true;
+            isShiftPressed = true;
+            if (direction.magnitude > 0)
+            {
+                isRunning = true;
+            }
         }
 
-        if(value.canceled)
+        if (value.canceled)
         {
-            isRunning= false;
+            isShiftPressed = false;
+            isRunning = false;
         }
-
     }
+
 
 }
