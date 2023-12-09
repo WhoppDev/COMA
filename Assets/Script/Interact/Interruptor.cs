@@ -5,6 +5,8 @@ public class Interruptor : MonoBehaviour, IInteractable
 {
     public GameObject[] luzes;
 
+    public Sprite action;
+
     [SerializeField] private Interruptor_Info interruptor;
 
     private void Start()
@@ -49,6 +51,22 @@ public class Interruptor : MonoBehaviour, IInteractable
     {
         yield return new WaitForSeconds(0.5f); // Ajuste o tempo conforme necessário
         interruptor.isInteracting = false;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            PlayerController.instance.actionIcon.sprite = action;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            PlayerController.instance.actionIcon.sprite = null;
+        }
     }
 
 

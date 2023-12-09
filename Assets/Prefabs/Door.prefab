@@ -273,6 +273,7 @@ MonoBehaviour:
   targetPosition: {x: 0.2862742, y: -0.6738096, z: 0}
   doorName: Corredor Principal
   fadeAnim: {fileID: 4686139788421675697}
+  action: {fileID: 21300000, guid: 95624de65c9084c4abd8114e15e49fe9, type: 3}
   requiredKey: {fileID: 0}
 --- !u!95 &4686139788421675697
 Animator:

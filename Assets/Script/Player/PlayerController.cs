@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public PlayerMoviment moviment;
     public Animator anim;
     public CombatController combat;
+    public SpriteRenderer actionIcon;
 
     void Awake()
     {
