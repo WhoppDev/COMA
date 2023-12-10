@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private GameObject player;
 
-    private void Start()
+    private void OnEnable()
     {
         player = FindObjectOfType<PlayerController>().gameObject;
 
