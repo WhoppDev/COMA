@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ItensDATA : ScriptableObject
 {
     public Sprite itemIcon;
+    public Sprite itemImagem;
     public string itemName;
     public string itemDescription;
 
