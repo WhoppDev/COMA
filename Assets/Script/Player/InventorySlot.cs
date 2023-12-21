@@ -2,29 +2,46 @@ using UnityEngine;
 
 public class InventorySlot : MonoBehaviour
 {
-    public GameObject actionMenuPrefab;
-    private GameObject actionMenuInstance;
+    public ItensDATA itemData;
 
-    public void OnItemSelect()
+    [SerializeField] GameObject useMenu, inspectMenu, destroyMenu;
+
+    private void Start()
     {
-        if (actionMenuInstance != null)
+        useMenu.SetActive(false);
+        inspectMenu.SetActive(false);
+        destroyMenu.SetActive(false);
+
+        if(itemData.canUse == true)
         {
-            Destroy(actionMenuInstance);
+            useMenu.SetActive(true);
         }
 
-        actionMenuInstance = Instantiate(actionMenuPrefab, Vector3.zero, Quaternion.identity, this.transform);
-
-        actionMenuInstance.transform.localPosition = Vector3.zero;
-
-        actionMenuInstance.transform.localScale = Vector3.one;
-    }
-
-    public void HideActionMenu()
-    {
-        if (actionMenuInstance != null)
+        if (itemData.canInspect == true)
         {
-            Destroy(actionMenuInstance);
+            inspectMenu.SetActive(true);
+        }
+
+        if (itemData.canDestroy == true)
+        {
+            destroyMenu.SetActive(true);
         }
     }
+    public void SetItemData(ItensDATA data)
+    {
+        itemData = data;
+        
+    }
+
+    public void DestroyItem()
+    {
+        Destroy(transform.parent.gameObject);
+    }
+
+
+
+
 }
+
+
 

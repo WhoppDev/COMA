@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 
-public class InventoryController : MonoBehaviour, IInteractable
+public class InventoryController : MonoBehaviour
 {
     public ItensDATA[] slots;
     public Image[] slotImage;
@@ -19,25 +19,20 @@ public class InventoryController : MonoBehaviour, IInteractable
         currentHit = hit;
     }
 
-    public void Interact()
+    public void AddItemToInventory(ItensDATA item)
     {
-        if (!isTaking && currentHit.collider != null && currentHit.collider.tag == "Objects")
+        Debug.Log("Item recebido");
+        for (int i = 0; i < slots.Length; i++)
         {
-            isTaking = true;
-            for (int i = 0; i < slots.Length; i++)
+            if (slots[i] == null || slots[i].name == item.name)
             {
-                if (slots[i] == null || slots[i].name == currentHit.transform.GetComponent<ObjectType>().objectType.name)
-                {
-                    slots[i] = currentHit.transform.GetComponent<ObjectType>().objectType;
-                    slotAmount[i]++;
-                    slotImage[i].sprite = slots[i].itemIcon;
-
-                    Destroy(currentHit.transform.gameObject);
-                    break;
-                }
+                slots[i] = item;
+                slotAmount[i]++;
+                slotImage[i].sprite = item.itemIcon;
+                break;
             }
-            isTaking = false; // Reset the flag after interaction
         }
+        Debug.Log("Cadastrado");
     }
 }
 
