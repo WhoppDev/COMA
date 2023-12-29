@@ -8085,6 +8085,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5838565791065758856, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
   m_PrefabInstance: {fileID: 2955268963374980944}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2038537924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1537078510001636267, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+  m_PrefabInstance: {fileID: 2955268963374980944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038537917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d26a4577029454399f215b0515a104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2061887327
 GameObject:
   m_ObjectHideFlags: 0
@@ -8761,6 +8772,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1537078510001636267, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 191638344}
     - target: {fileID: 5259920911456177511, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
       propertyPath: m_Name
       value: Player
@@ -8817,9 +8832,49 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 1.56
       objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: 484deadb-2e3c-4c95-9a94-61a6a3d08d40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: Player/Inventory[/Keyboard/i]
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2038537924}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenInventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776722836526216542, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8322927093420458772, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0562592
+      value: -2.0545557
       objectReference: {fileID: 0}
     - target: {fileID: 8322927093420458772, guid: ecbe388fb5d30a74c9b381458c2d96da, type: 3}
       propertyPath: m_LocalPosition.y

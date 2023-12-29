@@ -9,6 +9,9 @@ public class InteractSystem : MonoBehaviour
     public LayerMask interactableLayer;
     public Interruptor acenderLuz;
 
+    public GameObject inventory;
+    public bool openInventory = false;
+
     public void Interact(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -32,6 +35,23 @@ public class InteractSystem : MonoBehaviour
             }
 
             Debug.DrawRay(transform.position, direction * interactionDistance, Color.red, 5f);
+        }
+    }
+
+    public void OpenInventory(InputAction.CallbackContext context)
+    {
+        openInventory = !openInventory;
+
+        if (context.started)
+        {
+            if (openInventory)
+            {
+            inventory.SetActive(true);
+            }
+            else
+            {
+            inventory.SetActive(false);
+            }
         }
     }
 }
