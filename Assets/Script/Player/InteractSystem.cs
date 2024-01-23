@@ -25,11 +25,6 @@ public class InteractSystem : MonoBehaviour
                 IInteractable interactableObj = hit.collider.GetComponent<IInteractable>();
                 if (interactableObj != null)
                 {
-                    if (interactableObj is InventoryController inventoryController)
-                    {
-                        inventoryController.SetCurrentHit(hit);
-                    }
-
                     interactableObj.Interact();
                 }
             }
