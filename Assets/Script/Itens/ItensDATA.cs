@@ -14,4 +14,6 @@ public class ItensDATA : ScriptableObject
     public bool canUse;
     public bool canInspect;
     public bool canDestroy;
+
+    public int quantity;
 }
