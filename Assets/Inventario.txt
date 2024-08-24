@@ -1,0 +1,8 @@
+{
+    "armarioID": [
+        "Armazem"
+    ],
+    "itemID": [
+        "Medico"
+    ]
+}

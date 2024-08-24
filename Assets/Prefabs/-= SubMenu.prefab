@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3876577155588729872}
   m_Layer: 0
   m_Name: Usar
-  m_TagString: Untagged
+  m_TagString: Usar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,7 +129,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1014764777214974161}
-  - component: {fileID: 6842635429521789219}
   m_Layer: 0
   m_Name: -= SubMenu
   m_TagString: Untagged
@@ -137,14 +136,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1014764777214974161
-Transform:
+--- !u!224 &1014764777214974161
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4353658100375673434}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -155,22 +153,11 @@ Transform:
   - {fileID: 2092508177331521668}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6842635429521789219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4353658100375673434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4406ad7502877534883fe0bcb12074a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemData: {fileID: 0}
-  useMenu: {fileID: 926605885584548361}
-  inspectMenu: {fileID: 6489853242812538929}
-  destroyMenu: {fileID: 8802375970052013433}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 256, y: 144}
+  m_SizeDelta: {x: 512, y: 288}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6489853242812538929
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +172,7 @@ GameObject:
   - component: {fileID: 3805474851703470338}
   m_Layer: 0
   m_Name: Inspecionar
-  m_TagString: Untagged
+  m_TagString: Inspecionar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,7 +292,7 @@ GameObject:
   - component: {fileID: 5180631447236458137}
   m_Layer: 0
   m_Name: Descartar
-  m_TagString: Untagged
+  m_TagString: Descartar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,7 +398,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6842635429521789219}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventorySlot, Assembly-CSharp
         m_MethodName: DestroyItem
         m_Mode: 1

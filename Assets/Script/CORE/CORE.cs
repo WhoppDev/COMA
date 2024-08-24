@@ -8,6 +8,7 @@ public class CORE : MonoBehaviour
     public SceneController sceneController;
     public TeleportManager teleportController;
     public PlayerMoviment playerMoviment;
+    public InventoryController inventarioController;
 
     public AnimationController animController;
     public GameObject player;

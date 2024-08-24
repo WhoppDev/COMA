@@ -1,15 +1,15 @@
-using Cinemachine;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCamera vcam;
+    [SerializeField] private CinemachineCamera vcam;
 
     [SerializeField] private GameObject player;
 
     private void OnEnable()
     {
-        player = FindObjectOfType<PlayerController>().gameObject;
+        player = FindFirstObjectByType<PlayerController>().gameObject;
 
         vcam.Follow = player.transform;
     }

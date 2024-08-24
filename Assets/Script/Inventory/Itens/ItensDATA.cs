@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName ="New Item", menuName ="Scriptable/New Item")]
 public class ItensDATA : ScriptableObject
 {
+    public string itemID;
     public Sprite itemIcon;
     public Sprite itemImagem;
     public string itemName;

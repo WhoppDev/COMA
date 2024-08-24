@@ -8,12 +8,7 @@ public class InventorySlot : MonoBehaviour
     public Image iconImage;
     public int quantity;
     public TMP_Text quantityText;
-
-    private void Awake()
-    {
-        iconImage = GetComponentInChildren<Image>();
-        quantityText = GetComponentInChildren<TMP_Text>();
-    }
+    public bool isAvailable = false;
 
     public bool IsEmpty => itemData == null;
 
@@ -30,7 +25,6 @@ public class InventorySlot : MonoBehaviour
             itemData.quantity = newQuantity;
             quantityText.text = newQuantity > 1 ? newQuantity.ToString() : "";
             quantity = newQuantity > 1 ? newQuantity : 0;
-            UpdateSlotUI();
         }
     }
 
@@ -40,7 +34,7 @@ public class InventorySlot : MonoBehaviour
         UpdateSlotUI();
     }
 
-    private void UpdateSlotUI()
+    public void UpdateSlotUI()
     {
         if (itemData != null)
         {

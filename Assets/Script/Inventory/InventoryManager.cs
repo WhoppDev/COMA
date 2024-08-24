@@ -4,28 +4,16 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public List<GameObject> slots;
+    private InventoryController inventário;
 
     void Start()
     {
-        InitializeSlots();
-    }
-
-    private void InitializeSlots()
-    {
-        foreach (GameObject slot in slots)
-        {
-            InventorySlot slotComponent = slot.GetComponent<InventorySlot>();
-            if (slotComponent != null)
-            {
-                slotComponent.ClearSlot();
-            }
-        }
+        inventário = CORE.instance.inventarioController;
     }
 
     // Adiciona um item ao primeiro slot vazio encontrado
     public void AddItemToInventory(ItensDATA itemData)
     {
-        Debug.Log("chamou a função");
         foreach (GameObject slot in slots)
         {
             InventorySlot slotComponent = slot.GetComponent<InventorySlot>();
@@ -46,6 +34,9 @@ public class InventoryManager : MonoBehaviour
                 break;
             }
         }
+
+        UpdateInventoryUI();
+
     }
 
     // Remove um item específico do inventário
@@ -57,8 +48,18 @@ public class InventoryManager : MonoBehaviour
             if (slotComponent.itemData == itemData)
             {
                 slotComponent.ClearSlot();
-                break; // Interrompe o loop assim que o item for removido
+                break;
             }
+        }
+    }
+
+    // Atualiza a UI do inventário
+    public void UpdateInventoryUI()
+    {
+        foreach (GameObject slot in slots)
+        {
+            InventorySlot slotComponent = slot.GetComponent<InventorySlot>();
+            slotComponent.UpdateSlotUI();
         }
     }
 }

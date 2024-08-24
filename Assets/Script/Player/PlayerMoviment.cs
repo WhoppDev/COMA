@@ -30,11 +30,11 @@ public class PlayerMoviment : MonoBehaviour
 
         if(isRunning && !PlayerController.instance.combat.isAttacking)
         {
-            rb.velocity = new Vector2(direction.x * runningSpeed, rb.velocity.y);
+            rb.linearVelocity = new Vector2(direction.x * runningSpeed, rb.linearVelocity.y);
         } 
         else if(!isRunning && !PlayerController.instance.combat.isAttacking)
         {
-            rb.velocity = new Vector2(direction.x * playerSpeed, rb.velocity.y);
+            rb.linearVelocity = new Vector2(direction.x * playerSpeed, rb.linearVelocity.y);
         }
 
         if (direction.x < 0)
